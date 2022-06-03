@@ -32,14 +32,16 @@ public class WeaponValue {
     }
 
     private static void processWeaponStrings(List<String> weaponStrings) {
-        if(weaponStrings.size() ==0) {
+        if (weaponStrings.size() == 0) {
             System.out.println();
             return;
         }
-        if(weaponStrings.size() == 1) {
+
+        if (weaponStrings.size() == 1) {
             System.out.println(getWeaponCount(weaponStrings.get(0)));
             return;
         }
+
         int n = weaponStrings.size();
         String result = battle(weaponStrings.get(0), weaponStrings.get(1));
         for (int i = 2; i < n; i++) {
